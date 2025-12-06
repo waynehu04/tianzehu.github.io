@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Your Name | Research</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #f9fafb;
+      color: #111827;
+      line-height: 1.6;
+    }
+    a { color: #2563eb; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    /* Top bar */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background: #ffffff;
+      border-bottom: 1px solid #e5e7eb;
+      padding: 0.75rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .nav-left { font-weight: 600; }
+    .nav-links a {
+      margin-left: 1rem;
+      font-size: 0.95rem;
+    }
+
+    /* Page layout */
+    .page {
+      max-width: 900px;
+      padding: 2rem 1.5rem 3rem;
+      margin: 0 auto;
+    }
+
+    h1, h2, h3 {
+      margin-top: 1.5rem;
+      margin-bottom: 0.5rem;
+      font-weight: 600;
+    }
+
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      align-items: center;
+      margin-top: 1.5rem;
+    }
+    .hero-text { flex: 2 1 250px; }
+    .hero-img {
+      flex: 0 0 160px;
+      border-radius: 999px;
+      overflow: hidden;
+      background: #e5e7eb;
+    }
+    .hero-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .subtle { color: #6b7280; }
+
+    /* Cards for research highlights */
+    .cards {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr);
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    @media (min-width: 768px) {
+      .cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+    .card {
+      background: #ffffff;
+      border-radius: 0.75rem;
+      border: 1px solid #e5e7eb;
+      padding: 1rem 1.25rem;
+      box-shadow: 0 10px 15px -10px rgba(0,0,0,0.1);
+    }
+    .card h3 {
+      margin-top: 0;
+      font-size: 1rem;
+    }
+    .tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 0.1rem 0.4rem;
+      border-radius: 999px;
+      background: #eff6ff;
+      color: #1d4ed8;
+      margin-bottom: 0.25rem;
+    }
+
+    section { margin-top: 2rem; }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="nav-left">Your Name</div>
+    <nav class="nav-links">
+      <a href="#research">Research</a>
+      <a href="#publications">Publications</a>
+      <a href="#cv">CV</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main class="page">
+    <!-- HERO / INTRO -->
+    <section class="hero">
+      <div class="hero-text">
+        <h1>Your Name</h1>
+        <p class="subtle">
+          Your position · Your department · Your university
+        </p>
+        <p>
+          Short 2–3 sentence intro about you. For example:
+          I am an undergraduate mechanical engineering student interested in
+          soft robotics, mechanical computation, and fabric-based pneumatic logic.
+          I like combining modeling, fabrication, and experiments to create mechanical intelligence.
+        </p>
+      </div>
+      <div class="hero-img">
+        <!-- Replace "your_photo.jpg" with your own file later -->
+        <img src="your_photo.jpg" alt="Portrait of Your Name" />
+      </div>
+    </section>
+
+    <!-- RESEARCH -->
+    <section id="research">
+      <h2>Research Highlights</h2>
+      <div class="cards">
+        <article class="card">
+          <span class="tag">Example Topic</span>
+          <h3>Project Title #1</h3>
+          <p>
+            2–3 line description of your main research project or interest.
+            Mention methods (modeling, experiments) and goals.
+          </p>
+        </article>
+        <article class="card">
+          <span class="tag">Example Topic</span>
+          <h3>Project Title #2</h3>
+          <p>
+            Another project or area (e.g., battery safety, microplastics robots,
+            bio-inspired mechanisms). Again, 2–3 lines.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications">
+      <h2>Publications & Presentations</h2>
+      <p><strong>Your Name</strong>, Coauthors. “Paper or Project Title.” Venue, Year.</p>
+      <p><strong>Your Name</strong>, Coauthors. “Another Title.” Conference or Journal, Year.</p>
+    </section>
+
+    <!-- CV -->
+    <section id="cv">
+      <h2>CV</h2>
+      <p>
+        <!-- Replace the PDF name after you upload it -->
+        <a href="files/Your_Name_CV.pdf" target="_blank">Download my CV (PDF)</a>
+      </p>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></p>
+      <p>
+        <a href="https://scholar.google.com" target="_blank">Google Scholar</a> ·
+        <a href="https://github.com" target="_blank">GitHub</a> ·
+        <a href="https://www.linkedin.com" target="_blank">LinkedIn</a>
+      </p>
+    </section>
+  </main>
+</body>
+</html>
